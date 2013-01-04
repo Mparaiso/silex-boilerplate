@@ -1,0 +1,10 @@
+{% extends 'layout.html.twig' %}
+{% block content %}
+<p>  Hello {{ name|default("Marc") }}</p>
+ <p>
+     <ul></ul>
+     {% for person in persons %}
+         <li>{{person.firstName}} {{person.lastName}}</li>
+     {% endfor %}
+ </p>
+{% endblock %}
